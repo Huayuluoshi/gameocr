@@ -1,0 +1,40 @@
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test/cache output
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build/package output
+build/
+dist/
+*.egg-info/
+
+# PyInstaller generated files
+*.manifest
+
+# Local runtime config/logs
+*.log
+.gameocr/
+config.json
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Large/local OCR model binaries.
+# Keep documentation in the model directory tracked.
+models/paddleocr/*.onnx
+models/paddleocr/*.pdmodel
+models/paddleocr/*.pdiparams
+models/paddleocr/*.bin
+!models/paddleocr/README.md
